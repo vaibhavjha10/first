@@ -8,11 +8,17 @@ block content
     button(onclick = "showCities({city: 'Origin'})", class = "dropbtn")
       |Origin City
     div(id = "myDropdownOrigin", class="dropdown-content")
-      
+
   div(id = "destinationCity", class="dropdown")
     button(onclick = "showCities({city: 'Dest'})", class = "dropbtn")
       |Destination City
     div(id = "myDropdownDest", class="dropdown-content")
+      
+  div(id="routes")
+    button(id="getRoutes" onclick="getRoutes()")
+      |GET ROUTES
+  
+  div(id="possibilities")
       
   div(id="map")
     
