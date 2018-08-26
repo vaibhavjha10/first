@@ -23,7 +23,9 @@ function initMap() {
 window.onload =
   function(){
     console.log("doc loaded ");
-    document.getElementById("myDropdown").innerHTML = showcities
+    document.getElementById("myDropdownOrigin").innerHTML = showcities
+    document.getElementById("myDropdownDest").innerHTML = showcities
+
   }
 
   window.onclick = function(event) {
@@ -43,8 +45,10 @@ window.onload =
 
 
 function showCities(id){
-  console.log(JSON.stringify(id));
-  document.getElementById("myDropdown").classList.toggle("show");
+
+  var selected = "myDropdown"+id.city;
+  console.log(selected);
+  document.getElementById(selected).classList.toggle("show");
   console.log(showcities);
 
 }

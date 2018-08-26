@@ -5,14 +5,14 @@ block content
   p Welcome to #{loc}
   
   div(id = "originCity", class="dropdown")
-    button(onclick = "showCities({:22})", class = "dropbtn")
+    button(onclick = "showCities({city: 'Origin'})", class = "dropbtn")
       |Origin City
-    div(id = "myDropdown", class="dropdown-content")
+    div(id = "myDropdownOrigin", class="dropdown-content")
       
   div(id = "destinationCity", class="dropdown")
-    button(onclick = "showCities({a:22})", class = "dropbtn")
+    button(onclick = "showCities({city: 'Dest'})", class = "dropbtn")
       |Destination City
-    div(id = "myDropdownDes", class="dropdown-content")
+    div(id = "myDropdownDest", class="dropdown-content")
       
   div(id="map")
     
