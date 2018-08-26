@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{loc}
+  
+  div(id = "originCity", class="dropdown")
+    button(onclick = "showCities({a:22})", class = "dropbtn")
+      |Origin City
+    div(id = "myDropdown", class="dropdown-content")
+      
+  div(id = "destinationCity", class="dropdown")
+    button(onclick = "showCities({a:22})", class = "dropbtn")
+      |Destination City
+    div(id = "myDropdown", class="dropdown-content")
+        
+          
