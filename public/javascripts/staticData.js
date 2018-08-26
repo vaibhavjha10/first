@@ -10,6 +10,16 @@ function loadcities(cities){
   return aa
 }
 
+function initMap() {
+  // The location of Uluru
+  var indore = {lat: 22.7196, lng: 75.8577};
+  // The map, centered at Uluru
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 4, center: indore});
+  // The marker, positioned at Uluru
+  var marker = new google.maps.Marker({position: indore, map: map});
+}
+
 window.onload =
   function(){
     console.log("doc loaded ");
