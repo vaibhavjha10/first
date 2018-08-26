@@ -87,9 +87,17 @@ function getRoutes(){
 }
 
 function showRoutes(response, status) {
-  document.getElementById('possibilities').innerHTML = "<h2>"+JSON.stringify(response)+"</h2>";
 
-  console.log(JSON.stringify(response));
+  yo = {routes:
+        [{name: "Route 1", distance: "574 KM", time: "496886 ms", cost: "RS 1000000"},
+          {name: "Route 2", distance: "466 KM", time: "456890 ms", cost: "RS 2000000"},
+          {name: "Including Water Ways bc", distance: "500 KM", time: "505505 ms", cost: "RS 2"}
+      ]
+
+      }
+
+      document.getElementById('possibilities').innerHTML = "<h2>"+JSON.stringify(yo)+"</h2>";
+  console.log(JSON.stringify(yo));
   // See Parsing the Results for
   // the basics of a callback function.
 }
