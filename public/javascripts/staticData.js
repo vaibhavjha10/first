@@ -1,6 +1,5 @@
 
 var cities = ['Mumbai','Delhi','Indore']
-var cityPort = JSON.parse(data)
 var showcities = loadcities(cities)
 function loadcities(cities){
   var aa = ""
@@ -13,7 +12,7 @@ function loadcities(cities){
 
 window.onload =
   function(){
-    console.log("doc loaded " + cityPort);
+    console.log("doc loaded ");
     document.getElementById("myDropdown").innerHTML = showcities
   }
 
